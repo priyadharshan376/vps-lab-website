@@ -33,3 +33,39 @@ textarea:focus-visible {
   outline: 2px solid #1B4F4F;
   outline-offset: 2px;
 }
+
+/* Gentle 3D floating animation used by WhyChooseUs cards.
+   Rotates in 3D space (rotateX/rotateY) while drifting up and down. */
+@keyframes float3d {
+  0% {
+    transform: perspective(600px) translateY(0) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: perspective(600px) translateY(-10px) rotateX(8deg) rotateY(10deg);
+  }
+  100% {
+    transform: perspective(600px) translateY(0) rotateX(0deg) rotateY(0deg);
+  }
+}
+
+.float-3d {
+  transform-style: preserve-3d;
+  animation: float3d 6s ease-in-out infinite;
+}
+
+/* Simple entrance animation for hero text, staggered via animation-delay */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  opacity: 0;
+  animation: fadeInUp 0.7s ease-out forwards;
+}

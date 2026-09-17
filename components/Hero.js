@@ -3,18 +3,18 @@ import { CameraIcon } from "./icons";
 
 export default function Hero() {
   return (
-    <section id="top" className="max-w-content mx-auto px-6 pt-14 pb-20 grid md:grid-cols-2 gap-12 items-center">
+    <section id="top" className="max-w-content mx-auto px-6 pt-14 pb-20 grid md:grid-cols-2 gap-12 items-center overflow-hidden">
       <div>
-        <h1 className="font-serif text-4xl sm:text-5xl leading-tight text-primary-dark">
+        <h1 className="fade-in-up font-serif text-4xl sm:text-5xl leading-tight text-primary-dark">
           Blood tests and health checkups, done right here in {siteConfig.location.split(",")[0]}.
         </h1>
-        <p className="mt-5 text-lg text-ink/80 max-w-md">
+        <p className="fade-in-up mt-5 text-lg text-ink/80 max-w-md" style={{ animationDelay: "0.15s" }}>
           {siteConfig.labName} runs routine and specialised diagnostic tests for families in
           Watrap and the villages around it — with same-day reports for most tests and home
           sample collection on request.
         </p>
 
-        <div className="mt-8 flex flex-wrap gap-4">
+        <div className="fade-in-up mt-8 flex flex-wrap gap-4" style={{ animationDelay: "0.3s" }}>
           <a
             href="/contact"
             className="rounded-md bg-accent text-primary-dark font-medium px-6 py-3 hover:bg-accent-dark hover:text-white transition-colors"
@@ -37,8 +37,9 @@ export default function Hero() {
       <div className="relative flex justify-center md:justify-end">
         {/* Decorative rings sit behind the photo frame for depth */}
         <svg
-          className="absolute -z-10 opacity-70"
-          width="360" height="360" viewBox="0 0 360 360" fill="none"
+          className="absolute -z-10 opacity-70 float-3d left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 w-[260px] h-[260px] sm:w-[360px] sm:h-[360px]"
+          style={{ animationDuration: "10s" }}
+          viewBox="0 0 360 360" fill="none"
           aria-hidden="true"
         >
           <circle cx="180" cy="180" r="170" stroke="#C9D8D5" strokeWidth="1.5" />

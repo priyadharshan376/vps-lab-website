@@ -88,3 +88,51 @@ export function CameraIcon(props) {
     </svg>
   );
 }
+
+export function ClockIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 7v5l3.5 2" />
+    </svg>
+  );
+}
+
+export function HomeVisitIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M3 11 12 4l9 7" />
+      <path d="M5 10v9a1 1 0 0 0 1 1h4v-6h4v6h4a1 1 0 0 0 1-1v-9" />
+    </svg>
+  );
+}
+
+export function ReportIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M7 3h7l4 4v14a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1Z" />
+      <path d="M9 12h6" />
+      <path d="M9 16h6" />
+      <path d="M9 8h3" />
+    </svg>
+  );
+}
+
+export function MenuIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M4 7h16" />
+      <path d="M4 12h16" />
+      <path d="M4 17h16" />
+    </svg>
+  );
+}
+
+export function CloseIcon(props) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M6 6l12 12" />
+      <path d="M18 6 6 18" />
+    </svg>
+  );
+}
