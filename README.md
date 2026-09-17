@@ -91,22 +91,33 @@ Next.js:
 ```
 pages/
   _app.js       — loads fonts and global styles
-  _document.js  — base HTML document
-  index.js      — the home page, assembles all sections
+  _document.js  — base HTML document, favicon
+  index.js      — Home page (hero, quick service highlights, CTA)
+  services.js   — full test list
+  about.js      — about the lab + photo gallery
+  contact.js    — booking form + address/phone/map
 components/
-  Header.js     — nav bar, call/WhatsApp buttons
-  Hero.js       — top banner
+  Layout.js     — shared Header + Footer wrapper used by every page
+  Header.js     — nav bar linking to the pages above, call/WhatsApp buttons
+  Hero.js       — home page banner
+  ServicesTeaser.js — home page preview of a few test categories
+  CtaBanner.js  — "Book or contact us" banner
   About.js      — about the lab (edit this with real details)
-  Services.js   — list of tests, pulled from lib/tests.js
+  Services.js   — full list of tests, pulled from lib/tests.js
   BookingForm.js— booking form → WhatsApp
   Contact.js    — address, phone, map
+  Gallery.js    — photo gallery (placeholders until you add real photos)
   Footer.js
+  icons.js      — small SVG icon set used next to each test category
 lib/
-  site-config.js — lab name, phone, address, hours
+  site-config.js — lab name, phone, address, hours, photos
   tests.js       — test categories and names
 styles/
   globals.css
 ```
+
+This is a proper multi-page site — Home, Services, About, and Contact are
+separate pages linked from the nav bar, not sections on one long page.
 
 ## Next steps (optional, once this is live)
 

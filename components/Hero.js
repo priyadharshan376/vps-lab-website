@@ -16,7 +16,7 @@ export default function Hero() {
 
         <div className="mt-8 flex flex-wrap gap-4">
           <a
-            href="#book"
+            href="/contact"
             className="rounded-md bg-accent text-primary-dark font-medium px-6 py-3 hover:bg-accent-dark hover:text-white transition-colors"
           >
             Book a test

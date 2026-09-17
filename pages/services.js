@@ -1,18 +1,16 @@
 import Head from "next/head";
 import Layout from "../components/Layout";
-import Hero from "../components/Hero";
-import ServicesTeaser from "../components/ServicesTeaser";
+import Services from "../components/Services";
 import CtaBanner from "../components/CtaBanner";
 import { siteConfig } from "../lib/site-config";
 
-export default function Home() {
+export default function ServicesPage() {
   return (
     <Layout>
       <Head>
-        <title>{siteConfig.labName} — Diagnostics in Watrap</title>
+        <title>Tests we offer — {siteConfig.labName}</title>
       </Head>
-      <Hero />
-      <ServicesTeaser />
+      <Services />
       <CtaBanner />
     </Layout>
   );
